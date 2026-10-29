@@ -26,6 +26,8 @@
 .config/zed/.tmp*
 .config/zed/embeddings/
 .config/zed/prompts/
+.config/nvim/nvim.log
+.config/nvim/.claude/
 *~
 *.bak
 .DS_Store
