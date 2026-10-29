@@ -1,0 +1,8 @@
+theme = Dracula
+cursor-style = block
+cursor-opacity = 1
+mouse-hide-while-typing = true
+font-family = JetBrainsMonoNF Nerd Font Mono
+font-size = 14
+shell-integration-features = sudo
+

@@ -1,0 +1,5 @@
+require("bearguns.options")
+require("bearguns.remap")
+require("bearguns.sync")
+require("packages")
+require("bearguns.lsp-setup")
