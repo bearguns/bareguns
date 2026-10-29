@@ -1,23 +1,19 @@
-eval (/opt/homebrew/bin/brew shellenv)
+# brew on mac systems
+switch (uname)
+    case Darwin
+        eval (/opt/homebrew/bin/brew shellenv)
+end
 
-set -Ua fish_user_paths $HOME/.cargo/bin
+fish_add_path -g $HOME/.cargo/bin
 
+alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+fish_add_path -g $BUN_INSTALL/bin
 
-starship init fish | source
-
-
-set -Ua PATH $PATH
-
-# pnpm
-set -gx PNPM_HOME "/Users/smb/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
+command -q starship; and starship init fish | source
 
 # mise
-/Users/smb/.local/bin/mise activate fish | source
+test -x ~/.local/bin/mise; and ~/.local/bin/mise activate fish | source
+
