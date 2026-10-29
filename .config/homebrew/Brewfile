@@ -1,0 +1,164 @@
+tap "anomalyco/tap"
+tap "d12frosted/emacs-plus", trusted: true
+tap "go-task/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "jesseduffield/lazygit"
+tap "jetpackduba/apps"
+tap "nikitabobko/tap"
+tap "sst/tap", "https://github.com/anomalyco/homebrew-tap.git"
+tap "wezterm/wezterm", "https://github.com/wezterm/homebrew-wezterm.git"
+# Run your GitHub Actions locally
+brew "act"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Remove large files or passwords from Git history like git-filter-branch
+brew "bfg"
+# Powerful, enterprise-ready, open source web server with automatic HTTPS
+brew "caddy"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Modern, maintained replacement for ls
+brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU compiler collection
+brew "gcc"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Render markdown on the CLI
+brew "glow"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# Task is a task runner/build tool that aims to be simpler and easier to use
+brew "go-task"
+# Post-modern modal text editor
+brew "helix"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Simple terminal UI for git commands
+brew "lazygit"
+# JIT library for the GNU compiler collection
+brew "libgccjit"
+# Language Server for the Lua language
+brew "lua-language-server"
+# Package manager for the Lua programming language
+brew "luarocks"
+# Terminal markdown viewer
+brew "mdfried"
+# Modern and intuitive terminal-based text editor
+brew "micro"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Incremental parsing library
+brew "tree-sitter"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Framework for managing multi-language pre-commit hooks
+brew "pre-commit"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Parser generator tool
+brew "tree-sitter-cli"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Internet file retriever
+brew "wget"
+# Utilities to create and convert Web Open Font File (WOFF) files
+brew "woff2"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
+# UNIX shell (command interpreter)
+brew "zsh"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode", trusted: true
+# GNU Emacs text editor
+brew "d12frosted/emacs-plus/emacs-plus@30", args: ["with-imagemagick"]
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace", trusted: true
+# GPU-accelerated terminal emulator
+cask "alacritty"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Utility that prevents the system from going to sleep
+cask "caffeine"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# Calendar software
+cask "fantastical"
+cask "font-hack-nerd-font"
+cask "font-intel-one-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-juliamono"
+cask "font-maple-mono-nf"
+cask "font-meslo-lg-nerd-font"
+cask "font-victor-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Free and open-source image editor
+cask "gimp"
+cask "gitnuro"
+# Web browser
+cask "google-chrome"
+# GPU-based terminal emulator
+cask "kitty"
+# Open source code editor written in Rust
+cask "lapce"
+# Animated screen capture application
+cask "licecap"
+# 2D game framework for Lua
+cask "love"
+# Open-source Markdown editor
+cask "macdown"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Get up and running with large language models locally
+cask "ollama-app"
+# LLM server built on MLX
+cask "osaurus"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Modified browser that helps in responsive web development
+cask "responsively"
+# Team communication and collaboration software
+cask "slack"
+# Native terminal coding agents command center
+cask "supacode"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+uv "specify-cli", source: "git+https://github.com/github/spec-kit.git"
