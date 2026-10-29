@@ -4,6 +4,7 @@ switch (uname)
         eval (/opt/homebrew/bin/brew shellenv)
 end
 
+fish_add_path -g ~/.local/bin
 fish_add_path -g $HOME/.cargo/bin
 
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"

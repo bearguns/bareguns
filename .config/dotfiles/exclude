@@ -1,0 +1,31 @@
+# Allow-list: ignore everything at each level, then re-include what we track.
+/*
+!/.config
+!/.emacs.d
+!/.tmux.conf
+!/AGENTS.md
+/.config/*
+!/.config/fish
+!/.config/nvim
+!/.config/tmux
+!/.config/kitty
+!/.config/ghostty
+!/.config/git
+!/.config/mise
+!/.config/lazygit
+!/.config/zed
+!/.config/homebrew
+!/.config/scripts
+!/.config/dotfiles
+/.emacs.d/*
+!/.emacs.d/init.el
+!/.emacs.d/early-init.el
+# secrets / junk (must stay after the allow-list)
+.config/fish/fish_variables
+.config/fish/secrets.fish
+.config/zed/.tmp*
+.config/zed/embeddings/
+.config/zed/prompts/
+*~
+*.bak
+.DS_Store
